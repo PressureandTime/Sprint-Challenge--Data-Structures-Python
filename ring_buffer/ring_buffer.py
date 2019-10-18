@@ -5,9 +5,19 @@ class RingBuffer:
     self.storage = [None]*capacity
 
   def append(self, item):
-    pass
+    i = self.current
+
+    self.storage[i] = item
+
 
   def get(self):
     pass
 
-  
+
+
+buffer = RingBuffer(3)
+buffer.append('petar')
+buffer.append('shaun')
+buffer.append('luke')
+
+print(buffer.storage)
