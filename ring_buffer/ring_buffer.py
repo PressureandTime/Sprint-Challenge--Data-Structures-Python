@@ -11,8 +11,8 @@ class RingBuffer:
         self.storage[i] = item
 
 
-        
-        self.storage += 1
+
+        self.capacity += 1
 
     def get(self):
         pass
