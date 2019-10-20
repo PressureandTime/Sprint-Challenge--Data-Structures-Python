@@ -13,16 +13,18 @@ class RingBuffer:
         self.current += 1
 
     def get(self):
-        pass
+        new_list = []
+        for item in self.storage:
+            if item != None:
+                new_list.append(item)
+        return new_list
 
 
 buffer = RingBuffer(3)
+print(buffer.get())
 buffer.append("petar")
 buffer.append("shaun")
 buffer.append("luke")
 buffer.append("zika")
 buffer.append("mile")
 buffer.append("zivorad")
-
-
-print(buffer.storage)
