@@ -10,9 +10,7 @@ class RingBuffer:
         i = self.current
         self.storage[i] = item
 
-
-
-        self.capacity += 1
+        self.current += 1
 
     def get(self):
         pass
@@ -24,6 +22,7 @@ buffer.append("shaun")
 buffer.append("luke")
 buffer.append("zika")
 buffer.append("mile")
+buffer.append("zivorad")
 
 
 print(buffer.storage)
