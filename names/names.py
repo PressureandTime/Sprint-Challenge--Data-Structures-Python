@@ -2,11 +2,14 @@ import time
 
 start_time = time.time()
 
-f = open('names_1.txt', 'r')
+filename1 = 'names/names_1.txt'
+filename2 = 'names/names_2.txt'
+
+f = open(filename1, 'r')
 names_1 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
-f = open('names_2.txt', 'r')
+f = open(filename2, 'r')
 names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
