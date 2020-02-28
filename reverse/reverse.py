@@ -80,6 +80,12 @@ class LinkedList:
         self.head.next_node = prev
 
 
+"""
+Important, run this file and you will see that reverse method is working and its still a single linked list
+"""
+
+
+
 lst = LinkedList()
 
 lst.create_list()
